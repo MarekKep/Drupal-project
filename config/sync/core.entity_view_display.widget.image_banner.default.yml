@@ -1,0 +1,29 @@
+uuid: 0aa22e8c-e2a8-4711-ab4a-2702973eef48
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.widget.image_banner.field_image
+    - widget_engine.widget_type.image_banner
+  module:
+    - image
+id: widget.image_banner.default
+targetEntityType: widget
+bundle: image_banner
+mode: default
+content:
+  field_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  langcode: true
+  name: true
+  search_api_excerpt: true
+  user_id: true
+  widget_preview: true

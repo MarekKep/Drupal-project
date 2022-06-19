@@ -1,0 +1,45 @@
+body {
+  background-color: rgb(110, 106, 106);
+}
+
+/* GRID LAYOUT */
+.grid-list {
+  display: grid;
+  grid-template-columns: 300px 600px 300px;
+  grid-template-rows: repeat(3, 300px);
+  padding: 50px;
+
+}
+.grid-list__item_1 {
+  background-image: url("https://nationaltoday.com/wp-content/uploads/2020/05/star-wars-day.jpg");
+  background-size: cover;
+}
+.grid-list__item_2 {
+  grid-row-start: 1;
+  grid-row-end: 3; 
+  grid-column-end: 3;
+  background-image: url("https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/star-wars-vs-aliens-4-exar-kun.jpg");
+  background-size: cover;
+}
+.grid-list__item_3 {
+  background-image: url("https://i.pinimg.com/736x/07/90/33/079033d8371b5b78d889c1542deeba9b.jpg");
+  background-size: cover;
+}
+.grid-list__item_4 {
+  grid-row-start: 2;
+  grid-row-end: 4; 
+  background-image: url("https://i.pinimg.com/originals/c7/f2/53/c7f2531c109c47850588c01de895b0ce.jpg");
+  background-size: cover;
+}
+.grid-list__item_5 {
+  background-image: url("https://www.cnet.com/a/img/resize/f7d52d162ad720bf2d13d4285e535ba5c58caf53/hub/2015/11/13/a78feed4-30b2-4268-913b-df821a8de34e/1-snowtrooper.jpg?auto=webp&width=1092");
+  background-size: cover;
+}
+.grid-list__item_6 {
+  background-image: url("https://thepopinsider.com/wp-content/uploads/2020/07/acme-archives_star-wars-prings.jpg");
+  background-size: cover;
+}
+.grid-list__item_7 {
+  background-image: url("https://images.saatchiart.com/saatchi/1667815/art/7939334/7006910-HSC00001-7.jpg");
+  background-size: cover;
+}

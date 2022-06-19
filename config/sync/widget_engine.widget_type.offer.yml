@@ -1,0 +1,6 @@
+uuid: 742efad3-58c0-40da-aef1-73efb71fc812
+langcode: en
+status: true
+dependencies: {  }
+id: offer
+label: Offer

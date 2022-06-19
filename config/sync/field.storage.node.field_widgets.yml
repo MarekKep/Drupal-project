@@ -1,0 +1,20 @@
+uuid: e4d09454-1cad-46c6-808b-03b457144085
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - widget_engine
+id: node.field_widgets
+field_name: field_widgets
+entity_type: node
+type: entity_reference
+settings:
+  target_type: widget
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

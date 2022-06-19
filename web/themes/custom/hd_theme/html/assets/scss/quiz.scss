@@ -1,0 +1,78 @@
+.field--name-field-quiz {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 45px 15px;
+  .field--name-field-dogtitle {
+    color: #3a3533;
+    font-family: "Roboto Slab";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 35px;
+    padding-bottom: 32px;
+  }
+  .field--name-field-dog-description {
+    font-family: "Roboto Slab";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .field--name-field-hr {
+    width: 345px;
+    hr {
+      border: 0.5px dashed #c9c5b9;
+    }
+  }
+  .field--name-field-button {
+    background-color: red;
+    padding: 10.5px 23px;
+    border-radius: 8px;
+    margin-bottom: 49px;
+    margin-top: 48px;
+    a {
+      color: white;
+    }
+  }
+  .field--name-field-text-breed {
+    font-family: "Roboto Slab";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 35px;
+    padding-bottom: 24px;
+  }
+  .field--name-field-link-breed {
+    font-family: "Roboto Slab";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    a {
+      color: black;
+      border-bottom: 2px solid red;
+    }
+    .paragraph--type--color {
+      content: " ";
+      border: 2px solid black;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .field--name-field-description-text3 {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+    .field--name-field-dog-description {
+      font-family: "Roboto Slab";
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 26px;
+    }
+    .field--name-field-hr {
+      width: 730px;
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{%
+  set classes = [
+  'container',
+  'region',
+  'region-' ~ region|clean_class,
+]
+%}
+{% if content %}
+  <div{{ attributes.addClass(classes) }}>
+    {{ content }}
+    <div class="burger-menu">
+      <span></span>
+    </div>
+  </div>
+{% endif %}

@@ -1,0 +1,19 @@
+uuid: bea3ade2-6408-48e1-a168-f9f40d27f38c
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_product
+id: commerce_product.field_similar_products
+field_name: field_similar_products
+entity_type: commerce_product
+type: entity_reference
+settings:
+  target_type: commerce_product_variation
+module: core
+locked: false
+cardinality: 3
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

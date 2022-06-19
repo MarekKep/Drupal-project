@@ -1,0 +1,44 @@
+body {
+  .region-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #f2f2f2;
+    #user-login-form {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      text-align: center;
+      height: 250px;
+      .form-required {
+        display: none;
+      }
+      #edit-pass,
+      #edit-name {
+        width: 300px;
+        font-size: 16px;
+        color: #43383e;
+        line-height: 1.2;
+        height: 62px;
+        background: #fff;
+        border-radius: 31px;
+        padding: 0 35px 0 35px;
+      }
+      #edit-submit {
+        background-color: rgb(54, 52, 52);
+        color: white;
+        padding: 0 20px;
+        min-width: 160px;
+        height: 62px;
+        border-radius: 31px;
+        &:hover {
+          background-color: black;
+          transition: all 0.3s;
+          padding: 0 100px;
+        }
+      }
+    }
+  }
+}

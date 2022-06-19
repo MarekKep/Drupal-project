@@ -1,0 +1,47 @@
+uuid: 6003e468-6e64-439d-9e39-37a1dc1f4778
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.widget.offer.field_description
+    - field.field.widget.offer.field_link
+    - widget_engine.widget_type.offer
+  module:
+    - link
+id: widget.offer.default
+targetEntityType: widget
+bundle: offer
+mode: default
+content:
+  field_description:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_link:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  name:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true
+  user_id: true
+  widget_preview: true

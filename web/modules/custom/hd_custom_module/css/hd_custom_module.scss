@@ -1,0 +1,54 @@
+.custom-module-block {
+    padding: 50px 15px;
+    form {
+        display: flex;
+        .form__items, .result{
+            width: 100%;
+        }
+        .form__items {
+            display: flex;
+            flex-direction: column;
+            .form__item{
+                margin: 10px 0;
+                label {
+                    display: block;
+                    width: 100%;
+                    font-family: "Roboto";
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 14px;
+                    line-height: 16px;
+                    text-transform: uppercase;
+                    color: #000000;
+                }
+                select, input {
+                    width: 50%;
+                    border: 1px solid black;
+                    border-radius: 5px;
+                    margin-top: 5px;
+                    padding: 5px;
+                }
+            }
+        }
+        .result {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    #custom-module-block-form {
+        display: flex;
+        flex-direction: column;
+        .form__items {
+            .form__item {
+                select, input {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,10 @@
+uuid: 17be260e-e5b4-494e-bac6-e90a03dbeabb
+langcode: en
+status: true
+dependencies: {  }
+id: inspiration
+label: Inspiration
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

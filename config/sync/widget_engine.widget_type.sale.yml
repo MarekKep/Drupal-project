@@ -1,0 +1,6 @@
+uuid: 349d133e-a6ce-4574-b174-bfd3ccbd1159
+langcode: en
+status: true
+dependencies: {  }
+id: sale
+label: Sale

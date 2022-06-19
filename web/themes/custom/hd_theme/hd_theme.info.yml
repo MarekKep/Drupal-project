@@ -1,0 +1,17 @@
+name: HD theme
+type: theme
+base theme: classy
+description: 'description'
+core_version_requirement: ^8 || ^9
+libraries:
+  - hd_theme/global-styling
+  - hd_theme/global-scripts
+  - hd_theme/fancy-box
+  - hd_theme/product-library
+libraries-override:
+  classy/base: false
+regions:
+  header: Header
+  content: Content
+  left_sitebar: Left sitebar
+  footer: Footer

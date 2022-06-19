@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Macondo&display=swap');
+
+@font-face {
+    font-family: 'Koulen regular';
+    src: url("Koulen-Regular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 400;
+}
+
+.macondo {
+    font-family: 'macondo', sans-serif;
+}
+
+.lato {
+    font-family: 'lato', sans-serif;
+}
+
+.koulen {
+    font-family: 'Koulen regular';
+}
+
+.adaptive {
+    font-size: calc(1.5rem + 12 * ((100vw - 20rem) / (1024 - 320)));
+}
+ 

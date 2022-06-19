@@ -1,0 +1,52 @@
+# Global stylings. These CSS files will be loaded on every pages.
+global-styling:
+  version: 1.0
+  css:
+    base:
+      html/src/css/icon-fonts.css: {}
+      html/src/css/style.css: {}
+
+# Global Javascripts. These will be loaded on every pages.
+global-scripts:
+  version: 1.0
+  js:
+    html/src/js/index.js: {}
+  dependencies:
+    - core/drupal
+    - core/jquery
+    - core/once
+
+# Product Library.
+product-library:
+  version: 1.0
+  header: true
+  js:
+    html/src/js/slick.js: {}
+    html/src/js/product.js: {}
+    /libraries/fancybox/dist/fancybox.esm.js: {}
+  dependencies:
+    - core/drupal
+    - core/jquery
+    - core/once
+  css:
+    base:
+      html/src/css/slick.css: {}
+      html/src/css/slick-theme.css: {}
+      html/src/css/product.css: {}
+      /libraries/fancybox/dist/fancybox.css: {}
+# Login page.
+login-page:
+  version: 1.0
+  css:
+    base:
+      html/src/css/login.css: {}
+  js:
+    html/src/js/login.js: { }
+
+fancy-box:
+  version: 1.0
+  js:
+    /libraries/fancybox/dist/fancybox.umd.js: {}
+  css:
+    base:
+      /libraries/fancybox/dist/fancybox.css: {}

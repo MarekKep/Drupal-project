@@ -1,0 +1,19 @@
+uuid: 8ccd72ab-aa12-4041-aa5f-54bfe268ff7a
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_product
+    - starrating
+id: commerce_product_variation.field_r
+field_name: field_r
+entity_type: commerce_product_variation
+type: starrating
+settings: {  }
+module: starrating
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

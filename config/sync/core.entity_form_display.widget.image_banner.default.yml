@@ -1,0 +1,41 @@
+uuid: d5983417-8abb-43e1-8865-6fc1be9c8f67
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.widget.image_banner.field_image
+    - image.style.thumbnail
+    - widget_engine.widget_type.image_banner
+  module:
+    - image
+id: widget.image_banner.default
+targetEntityType: widget
+bundle: image_banner
+mode: default
+content:
+  field_image:
+    type: image_image
+    weight: 1
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  user_id: true
+  widget_preview: true

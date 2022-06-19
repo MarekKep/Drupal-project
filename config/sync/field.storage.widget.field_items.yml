@@ -1,0 +1,21 @@
+uuid: 1b4b2498-39f5-429f-9ad8-87103ac8cfc9
+langcode: en
+status: true
+dependencies:
+  module:
+    - entity_reference_revisions
+    - paragraphs
+    - widget_engine
+id: widget.field_items
+field_name: field_items
+entity_type: widget
+type: entity_reference_revisions
+settings:
+  target_type: paragraph
+module: entity_reference_revisions
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

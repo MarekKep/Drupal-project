@@ -1,0 +1,6 @@
+uuid: 178f9286-bc25-4d53-8577-f33c6e50a476
+langcode: en
+status: true
+dependencies: {  }
+id: image_banner
+label: 'Image banner'

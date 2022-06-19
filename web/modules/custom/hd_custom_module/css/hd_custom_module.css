@@ -1,0 +1,50 @@
+.custom-module-block {
+  padding: 50px 15px;
+}
+.custom-module-block form {
+  display: flex;
+}
+.custom-module-block form .form__items, .custom-module-block form .result {
+  width: 100%;
+}
+.custom-module-block form .form__items {
+  display: flex;
+  flex-direction: column;
+}
+.custom-module-block form .form__items .form__item {
+  margin: 10px 0;
+}
+.custom-module-block form .form__items .form__item label {
+  display: block;
+  width: 100%;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #000000;
+}
+.custom-module-block form .form__items .form__item select, .custom-module-block form .form__items .form__item input {
+  width: 50%;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin-top: 5px;
+  padding: 5px;
+}
+.custom-module-block form .result {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  #custom-module-block-form {
+    display: flex;
+    flex-direction: column;
+  }
+  #custom-module-block-form .form__items .form__item select, #custom-module-block-form .form__items .form__item input {
+    width: 100%;
+  }
+}

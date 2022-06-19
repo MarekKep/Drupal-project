@@ -1,0 +1,187 @@
+header {
+  background-color: black;
+  .region-header {
+    padding: 0 15px;
+    .burger-menu {
+      display: none;
+    }
+    height: 64px;
+    display: grid;
+    grid-template-columns: 195px minmax(300px, 905px) 54px 54px 54px;
+    align-items: center;
+    align-content: center;
+    .main-menu {
+      max-width: 575px;
+      display: flex;
+      justify-content: space-around;
+      margin: 0 auto;
+      .main-menu__item a {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 21px;
+        letter-spacing: 0;
+        text-align: left;
+        text-transform: uppercase;
+        color: white;
+      }
+    }
+    .header-cart a {
+      display: flex;
+      position: relative;
+      color: white;
+      font-size: 18px;
+      justify-content: flex-start;
+      .header-cart_count {
+        position: absolute;
+        top: -10px;
+        right: 5px;
+        font-size: 14px;
+        color: white;
+      }
+    }
+    .header-account a {
+      display: flex;
+      color: white;
+      font-size: 18px;
+      justify-content: center;
+    }
+    .header-search {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      i {
+        color: white;
+        font-size: 25px;
+      }
+    }
+    #block-sitebranding-2 {
+      a {
+        img {
+          max-width: 192px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    .region-header {
+      padding: 0 15px;
+      height: auto;
+      display: grid;
+      grid-template-columns: minmax(100px, 1fr) minmax(10px, 54px) minmax(
+          10px,
+          54px
+        ) minmax(10px, 54px) 54px;
+      grid-template-rows: 64px 1fr;
+      grid-template-areas:
+        "sitebranding block-cart menu--account header-search burger-menu"
+        "menu--main menu--main menu--main menu--main menu--main";
+      align-items: center;
+      align-content: center;
+      .burger-menu {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        span {
+          margin: auto;
+          width: 25px;
+          height: 2px;
+          background-color: white;
+          &:before {
+            content: "";
+            position: absolute;
+            width: 12.5px;
+            height: 1px;
+            background-color: white;
+            transform: translateY(-8px);
+            transition: 0.4s;
+          }
+          &::after {
+            content: "";
+            position: absolute;
+            width: 12.5px;
+            height: 1px;
+            margin-left: 12.5px;
+            background-color: white;
+            transform: translateY(8px);
+            transition: 0.4s;
+          }
+        }
+        &_active {
+          span {
+            height: 0;
+            &:before {
+              width: 25px;
+              transform: rotate(45deg);
+            }
+            &::after {
+              width: 25px;
+              transform: rotate(-45deg);
+              margin-left: 0;
+            }
+          }
+        }
+      }
+      #block-sitebranding-2 {
+        grid-area: sitebranding;
+      }
+      .menu--main {
+        height: 0;
+        overflow: hidden;
+        transition: 0.5s;
+        grid-area: menu--main;
+      }
+      #block-cart {
+        grid-area: block-cart;
+        .header-cart a {
+          justify-content: center;
+        }
+      }
+      .menu--account {
+        grid-area: menu--account;
+      }
+      .header-search {
+        grid-area: header-search;
+        justify-content: center;
+      }
+      .burger-menu {
+        grid-area: burger-menu;
+      }
+      .main-menu {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        margin: 0 auto;
+        min-height: 165px;
+        padding: 20px 0;
+      }
+      &_active {
+        .menu--main {
+          height: 180px;
+        }
+      }
+      li {
+        display: block;
+        text-align: center;
+      }
+    }
+  }
+}
+@media (max-width: 440px) {
+  header {
+    .region-header {
+      #block-sitebranding-2 a {
+        width: 55px;
+        display: block;
+        overflow: hidden;
+      }
+      .site-logo {
+        width: 90px;
+      }
+    }
+  }
+}
